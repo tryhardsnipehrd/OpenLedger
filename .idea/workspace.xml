@@ -4,22 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0eb8aca-f359-4f1e-9c65-4e4e934ead1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tryhrdsnphrd/openledger/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tryhrdsnphrd/openledger/MainMenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/tryhrdsnphrd/openledger/WelcomeScreen.fxml" afterDir="false" />
+    <list default="true" id="e0eb8aca-f359-4f1e-9c65-4e4e934ead1b" name="Changes" comment="Initial Commit, with a working GUI">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +26,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2S0Uwz0AeWL2r3CZidxaJVUGi47" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -71,8 +60,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1688283236741</updated>
-      <workItem from="1688283237777" duration="2310000" />
+      <workItem from="1688283237777" duration="2497000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial Commit, with a working GUI">
+      <option name="closed" value="true" />
+      <created>1688285586858</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688285586858</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,5 +78,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initial Commit, with a working GUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit, with a working GUI" />
   </component>
 </project>
