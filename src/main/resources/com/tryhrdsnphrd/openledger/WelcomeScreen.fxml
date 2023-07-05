@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
@@ -9,14 +10,29 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.Button?>
 
-
-<Pane fx:id="MainMenu_Panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="596.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tryhrdsnphrd.openledger.MainMenuController">
+<VBox fx:id="MainMenu_VBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tryhrdsnphrd.openledger.MainMenuController">
    <children>
-      <ToolBar prefHeight="40.0" prefWidth="596.0">
-        <items>
-          <Button id="MainMenu_FileButton" fx:id="MainMenu_FileButton" mnemonicParsing="false" onAction="#on_MainMenu_FileButtonClicked" prefHeight="25.0" prefWidth="52.0" text="File" />
-            <Button fx:id="MainMenu_SettingsButton" mnemonicParsing="false" onAction="#on_MainMenu_SettingsButtonClicked" text="Button" />
-        </items>
-      </ToolBar>
+      <MenuBar fx:id="MainMenu_MenuBar">
+        <menus>
+          <Menu fx:id="MainMenu_MenuFile" mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="MainMenu_File_Exit" mnemonicParsing="false" onAction="#on_MainMenu_File_Exit_Click" text="Exit" />
+                  <MenuItem fx:id="MainMenu_File_New" mnemonicParsing="false" onAction="#on_MainMenu_File_New_Click" text="New" />
+            </items>
+          </Menu>
+          <Menu fx:id="MainMenu_MenuHelp" mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="MainMenu_Help_About" mnemonicParsing="false" onAction="#on_MainMenu_Help_About_Click" text="About" />
+                  <MenuItem fx:id="MainMenu_Help_Github" mnemonicParsing="false" onAction="#on_MainMenu_Help_Github_Click" text="Github" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <VBox fx:id="MainMenu_Interaction_VBox" alignment="BASELINE_CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Button fx:id="MainMenu_NewLedger_Button" alignment="CENTER" mnemonicParsing="false" onAction="#on_MainMenu_NewLedger_Button_Click" text="New Ledger" />
+            <Button fx:id="MainMenu_LoadLedger_Button" alignment="CENTER" mnemonicParsing="false" onAction="#on_MainMenu_LoadLedger_Button_Click" text="Load Ledger" />
+         </children>
+      </VBox>
    </children>
-</Pane>
+</VBox>
