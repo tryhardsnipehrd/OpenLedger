@@ -2,12 +2,18 @@ package com.tryhrdsnphrd.openledger;
 
 import javafx.application.Platform;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.geometry.Rectangle2D;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
-import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
+import javafx.stage.Screen;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class MainMenuController {
     // All the variables for our MainMenu.fxml file are here.
@@ -57,8 +63,14 @@ public class MainMenuController {
         System.out.println("Load Ledger button clicked");
     }
 
-    @FXML private void on_MainMenu_NewLedger_Button_Click() {
+    @FXML private void on_MainMenu_NewLedger_Button_Click() throws IOException {
         System.out.println("New Ledger button clicked");
+
+        Rectangle2D primaryScreenBounds = Screen.getPrimary().getVisualBounds();
+        Stage newStage = (Stage) MainMenu_NewLedger_Button.getScene().getWindow();
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("LedgerEditor.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), primaryScreenBounds.getWidth(), primaryScreenBounds.getHeight());
+        newStage.setScene(scene);
     }
 
 }

@@ -6,9 +6,22 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.tryhrdsnphrd.openledger.LedgerEditorController"
-            prefHeight="400.0" prefWidth="600.0">
-
-</AnchorPane>
+<VBox fx:id="LedgerEditor_VBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tryhrdsnphrd.openledger.LedgerEditorController">
+   <children>
+      <MenuBar fx:id="LedgerEditor_MenuBar">
+        <menus>
+          <Menu fx:id="LedgerEditor_MenuFile" mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="LedgerEditor_File_Exit" mnemonicParsing="false" text="Exit" />
+            </items>
+          </Menu>
+          <Menu fx:id="LedgerEditor_MenuHelp" mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="LedgerEditor_Help_About" mnemonicParsing="false" text="About" />
+                  <MenuItem fx:id="LedgerEditor_Help_Github" mnemonicParsing="false" text="Github" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</VBox>
