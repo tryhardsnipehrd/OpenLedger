@@ -17,9 +17,13 @@ public class LedgerEditorController {
     @FXML private MenuBar LedgerEditor_MenuBar;
     @FXML private Menu LedgerEditor_MenuFile;
     @FXML private MenuItem LedgerEditor_File_Exit;
+    @FXML private MenuItem LedgerEditor_File_Save;
     @FXML private Menu LedgerEditor_MenuHelp;
     @FXML private MenuItem LedgerEditor_Help_About;
     @FXML private MenuItem LedgerEditor_Help_Github;
+
+    // Interaction VBox variables
+    @FXML private VBox LedgerEditor_Interaction_VBox;
 
     // Functions relating to the code
     public LedgerEditorController() {

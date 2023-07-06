@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
@@ -12,16 +13,18 @@
         <menus>
           <Menu fx:id="LedgerEditor_MenuFile" mnemonicParsing="false" text="File">
             <items>
-              <MenuItem fx:id="LedgerEditor_File_Exit" mnemonicParsing="false" text="Exit" />
+                  <MenuItem fx:id="LedgerEditor_File_Save" mnemonicParsing="false" onAction="#on_LedgerEditor_File_Save_Click" text="Save" />
+              <MenuItem fx:id="LedgerEditor_File_Exit" mnemonicParsing="false" onAction="#on_LedgerEditor_File_Exit_Click" text="Exit" />
             </items>
           </Menu>
           <Menu fx:id="LedgerEditor_MenuHelp" mnemonicParsing="false" text="Help">
             <items>
-              <MenuItem fx:id="LedgerEditor_Help_About" mnemonicParsing="false" text="About" />
-                  <MenuItem fx:id="LedgerEditor_Help_Github" mnemonicParsing="false" text="Github" />
+              <MenuItem fx:id="LedgerEditor_Help_About" mnemonicParsing="false" onAction="#on_LedgerEditor_Help_About_Click" text="About" />
+                  <MenuItem fx:id="LedgerEditor_Help_Github" mnemonicParsing="false" onAction="#on_LedgerEditor_Help_Github_Click" text="Github" />
             </items>
           </Menu>
         </menus>
       </MenuBar>
+      <VBox fx:id="LedgerEditor_Interaction_VBox" prefHeight="370.0" prefWidth="600.0" />
    </children>
 </VBox>
