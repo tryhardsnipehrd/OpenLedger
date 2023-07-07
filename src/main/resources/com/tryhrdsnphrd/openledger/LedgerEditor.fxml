@@ -25,6 +25,20 @@
           </Menu>
         </menus>
       </MenuBar>
-      <VBox fx:id="LedgerEditor_Interaction_VBox" prefHeight="370.0" prefWidth="600.0" />
+      <VBox fx:id="LedgerEditor_Interaction_VBox" prefHeight="370.0" prefWidth="600.0">
+         <children>
+            <HBox fx:id="LedgerEditor_Location_HBox" alignment="CENTER" prefHeight="52.0" prefWidth="600.0">
+               <children>
+                  <Text fx:id="LedgerEditor_Location_Text" strokeType="OUTSIDE" strokeWidth="0.0" text="Location" />
+                  <TextField fx:id="LedgerEditor_Location_TextField" promptText="Location Purchased" />
+               </children>
+            </HBox>
+            <HBox fx:id="LedgerEditor_Date_HBox" alignment="CENTER" prefHeight="33.0" prefWidth="600.0">
+               <children>
+                  <Text fx:id="LedgerEditor_Date_Text" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" />
+                  <DatePicker fx:id="LedgerEditor_Date_DatePicker" promptText="Choose Date" />
+               </children>
+            </HBox>
+         </children></VBox>
    </children>
 </VBox>
