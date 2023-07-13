@@ -64,8 +64,6 @@ public class MainMenuController {
     }
 
     @FXML private void on_MainMenu_NewLedger_Button_Click() throws IOException {
-        System.out.println("New Ledger button clicked");
-
         Rectangle2D primaryScreenBounds = Screen.getPrimary().getVisualBounds();
         Stage newStage = (Stage) MainMenu_NewLedger_Button.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("LedgerEditor.fxml"));

@@ -25,7 +25,7 @@
           </Menu>
         </menus>
       </MenuBar>
-      <VBox fx:id="LedgerEditor_Interaction_VBox" prefHeight="370.0" prefWidth="600.0">
+      <VBox fx:id="LedgerEditor_Interaction_VBox" alignment="TOP_CENTER" prefHeight="370.0" prefWidth="600.0">
          <children>
             <HBox fx:id="LedgerEditor_Location_HBox" alignment="CENTER" prefHeight="52.0" prefWidth="600.0">
                <children>
@@ -39,6 +39,30 @@
                   <DatePicker fx:id="LedgerEditor_Date_DatePicker" promptText="Choose Date" />
                </children>
             </HBox>
+            <HBox fx:id="LedgerEditor_Total_HBox" alignment="CENTER" prefHeight="52.0" prefWidth="600.0">
+               <children>
+                  <Text fx:id="LedgerEditor_Total_Text" strokeType="OUTSIDE" strokeWidth="0.0" text="Total" />
+                  <TextField fx:id="LedgerEditor_Total_TextField" prefHeight="25.0" prefWidth="179.0" promptText="Total Amount (e.g. 1899)" />
+               </children>
+            </HBox>
+            <HBox fx:id="LedgerEditor_Memo_HBox" alignment="CENTER" prefHeight="52.0" prefWidth="600.0">
+               <children>
+                  <Text fx:id="LedgerEditor_Memo_Text" strokeType="OUTSIDE" strokeWidth="0.0" text="Memo" />
+                  <TextArea fx:id="LedgerEditor_Memo_TextArea" prefHeight="200.0" prefWidth="200.0" promptText="Short Note about Transaction" />
+               </children>
+            </HBox>
+            <VBox fx:id="LedgerEditor_Tags_VBox" prefHeight="143.0" prefWidth="600.0">
+               <children>
+                  <HBox fx:id="LedgerEditor_Tags_Entry_HBox" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Text fx:id="LedgerEditor_Tags_Entry_Text" strokeType="OUTSIDE" strokeWidth="0.0" text="Tags" />
+                        <TextField fx:id="LedgerEditor_Tags_Entry_TextField" onAction="#LedgerEditor_Tags_Entry_TextField_onAction" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="LedgerEditor_Tags_Display_HBox" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+            <Button fx:id="LedgerEditor_Submit_Transaction_Button" mnemonicParsing="false" text="Submit" />
          </children></VBox>
    </children>
 </VBox>

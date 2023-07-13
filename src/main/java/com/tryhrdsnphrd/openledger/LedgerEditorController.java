@@ -36,6 +36,25 @@ public class LedgerEditorController {
     @FXML private Text LedgerEditor_Date_Text;
     @FXML private DatePicker LedgerEditor_Date_DatePicker;
 
+    // Total
+    @FXML private HBox LedgerEditor_Total_HBox;
+    @FXML private Text LedgerEditor_Total_Text;
+    @FXML private TextField LedgerEditor_Total_TextField;
+
+    // Memo
+    @FXML private HBox LedgerEditor_Memo_HBox;
+    @FXML private Text LedgerEditor_Memo_Text;
+    @FXML private TextArea LedgerEditor_Memo_TextArea;
+
+    // Tags
+    @FXML private VBox LedgerEditor_Tags_VBox;
+    @FXML private HBox LedgerEditor_Tags_Entry_HBox;
+    @FXML private Text LedgerEditor_Tags_Entry_Text;
+    @FXML private TextField LedgerEditor_Tags_Entry_TextField;
+    @FXML private HBox LedgerEditor_Tags_Display_HBox;
+
+    @FXML private Button LedgerEditor_Submit_Transaction_Button;
+
     // Functions relating to the code
     public LedgerEditorController() {
     }
@@ -60,7 +79,26 @@ public class LedgerEditorController {
         System.out.println("Save button clicked");
     }
 
+    @FXML private void on_LedgerEditor_Submit_Transaction_Button_Click() {
+        System.out.println("Submit Transaction button clicked");
+    }
 
+    @FXML private void LedgerEditor_Tags_Entry_TextField_onAction() {
+        // Now we need to add a node to the Display HBox, then clear the text field.
+        // We will also need to add a delete button to the node, just by clicking on it.
+
+        Button TagButton = new Button(LedgerEditor_Tags_Entry_TextField.getText());
+        TagButton.setOnAction(event -> {
+            // We will need to remove the node from the display HBox.
+            LedgerEditor_Tags_Display_HBox.getChildren().remove(TagButton);
+            // Now set the cursor to the text field so the user can keep typing.
+            LedgerEditor_Tags_Entry_TextField.requestFocus();
+        });
+        LedgerEditor_Tags_Display_HBox.getChildren().add(TagButton);
+
+        // Clear the text
+        LedgerEditor_Tags_Entry_TextField.clear();
+    }
 
 
 }

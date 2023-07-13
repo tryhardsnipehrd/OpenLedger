@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0eb8aca-f359-4f1e-9c65-4e4e934ead1b" name="Changes" comment="Added MainMenu and Editor for the Ledgers">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tryhrdsnphrd/openledger/Money.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tryhrdsnphrd/openledger/Transaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tryhrdsnphrd/openledger/LedgerEditorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tryhrdsnphrd/openledger/LedgerEditorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tryhrdsnphrd/openledger/MainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tryhrdsnphrd/openledger/MainMenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/tryhrdsnphrd/openledger/LedgerEditor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/tryhrdsnphrd/openledger/LedgerEditor.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +70,9 @@
       <workItem from="1688359489526" duration="1973000" />
       <workItem from="1688530994020" duration="2156000" />
       <workItem from="1688603767193" duration="3022000" />
-      <workItem from="1688667214243" duration="3068000" />
+      <workItem from="1688667214243" duration="3541000" />
+      <workItem from="1688857108304" duration="1961000" />
+      <workItem from="1689133175587" duration="3334000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit, with a working GUI">
       <option name="closed" value="true" />
@@ -106,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688623854753</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added MainMenu and Editor for the Ledgers">
+      <option name="closed" value="true" />
+      <created>1688702420760</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1688702420760</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
