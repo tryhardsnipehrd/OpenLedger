@@ -27,8 +27,8 @@ public class Transaction {
         return Date;
     }
 
-    public Money getTotal() {
-        return Total;
+    public int getTotal() {
+        return Total.getCents();
     }
 
     public String getMemo() {

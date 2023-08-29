@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0eb8aca-f359-4f1e-9c65-4e4e934ead1b" name="Changes" comment="Added MainMenu and Editor for the Ledgers">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tryhrdsnphrd/openledger/Money.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tryhrdsnphrd/openledger/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tryhrdsnphrd/openledger/LedgerEditorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tryhrdsnphrd/openledger/LedgerEditorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tryhrdsnphrd/openledger/MainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tryhrdsnphrd/openledger/MainMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tryhrdsnphrd/openledger/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tryhrdsnphrd/openledger/Transaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/tryhrdsnphrd/openledger/LedgerEditor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/tryhrdsnphrd/openledger/LedgerEditor.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,20 +43,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "android.gradle.sync.needed": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "Errors",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -72,7 +72,8 @@
       <workItem from="1688603767193" duration="3022000" />
       <workItem from="1688667214243" duration="3541000" />
       <workItem from="1688857108304" duration="1961000" />
-      <workItem from="1689133175587" duration="3334000" />
+      <workItem from="1689133175587" duration="4474000" />
+      <workItem from="1691119888622" duration="8000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit, with a working GUI">
       <option name="closed" value="true" />
@@ -119,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688702420760</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added MainMenu and Editor for the Ledgers">
+      <option name="closed" value="true" />
+      <created>1689229576040</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1689229576040</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

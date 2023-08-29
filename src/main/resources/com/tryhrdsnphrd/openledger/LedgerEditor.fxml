@@ -62,7 +62,7 @@
                   <HBox fx:id="LedgerEditor_Tags_Display_HBox" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
                </children>
             </VBox>
-            <Button fx:id="LedgerEditor_Submit_Transaction_Button" mnemonicParsing="false" text="Submit" />
+            <Button fx:id="LedgerEditor_Submit_Transaction_Button" mnemonicParsing="false" onAction="#on_LedgerEditor_Submit_Transaction_Button_Click" text="Submit" />
          </children></VBox>
    </children>
 </VBox>

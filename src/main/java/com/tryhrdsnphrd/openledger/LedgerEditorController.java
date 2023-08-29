@@ -81,6 +81,36 @@ public class LedgerEditorController {
 
     @FXML private void on_LedgerEditor_Submit_Transaction_Button_Click() {
         System.out.println("Submit Transaction button clicked");
+        // Create a transaction object, and apply all the information
+
+        // First, let's get the tags from the display HBox.
+        String[] Tags = new String[LedgerEditor_Tags_Display_HBox.getChildren().size()];
+        for (int i = 0; i < LedgerEditor_Tags_Display_HBox.getChildren().size(); i++) {
+            Tags[i] = ((Button) LedgerEditor_Tags_Display_HBox.getChildren().get(i)).getText();
+        }
+
+        Transaction transaction = new Transaction(
+                LedgerEditor_Location_TextField.getText(),
+                LedgerEditor_Date_DatePicker.getValue(),
+                new Money(LedgerEditor_Total_TextField.getText()),
+                LedgerEditor_Memo_TextArea.getText(),
+                Tags
+        );
+
+        // Now clear out the fields
+        LedgerEditor_Location_TextField.clear();
+        LedgerEditor_Date_DatePicker.setValue(null);
+        LedgerEditor_Total_TextField.clear();
+        LedgerEditor_Memo_TextArea.clear();
+        LedgerEditor_Tags_Display_HBox.getChildren().clear();
+
+        // And let the user know that we did submit it, using the GUI
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Transaction Submitted");
+        alert.setHeaderText("Transaction Submitted");
+        alert.setContentText("Your transaction has been submitted.");
+        alert.showAndWait();
+
     }
 
     @FXML private void LedgerEditor_Tags_Entry_TextField_onAction() {
